@@ -1,0 +1,13 @@
+.gerichte-container {
+    .gerichte{
+        .ger-items-container {
+            .animate_ger {
+                width: 50vw;
+                height: 40vh;
+                span {
+                    transform: rotate(135deg);
+                }
+            }
+        }
+    }
+}

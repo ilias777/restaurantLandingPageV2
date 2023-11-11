@@ -1,0 +1,144 @@
+.topfood-container {
+    background: radial-gradient(circle, rgb(29, 64, 104) 0%, rgba(9,22,32,1) 100%);
+    .topfood {
+        width: 80%;
+        margin: auto;
+        h2 {
+            padding-top: 10rem;
+        }
+        hr {
+            width: 10%;
+            height: 4px;
+            border: none;
+            background: $gold-c;
+            margin-bottom: 3rem;
+        }
+        .items {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding-bottom: 10rem;
+            .topfood-items {
+                width: 400px;
+                margin: 3rem 3rem 0 0;
+                border: 2px solid $gold-c;
+                box-shadow: -5px 5px $gold-c;
+                position: relative;
+                z-index: 1;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background: $gold-c;
+                    z-index: -1;
+                    transition: all 0.3s ease-in-out;
+                }
+                h4 {
+                    padding: 1rem;
+                }
+                h6 {
+                    padding: 1rem;
+                }
+                hr {
+                    width: 50%;
+                    background: $gold-c;
+                    height: 2px;
+                    border: none;
+                    transition: all 0.6s ease-in-out;
+                }
+                h5 {
+                    padding: 1rem;
+                    font-weight: 600;
+                    text-align: right;
+                    transition: all 0.3s ease-in-out;
+                }
+                &:hover {
+                    border-color: black;
+                    &::before {
+                        width: 100%;
+                    }
+                    hr {
+                        background: black;
+                        width: 100%;
+                    }
+                    h5 {
+                        transform: scale(2) translateX(-40%);
+                    }
+                }
+            }
+        }
+    }
+}
+ @mixin topfood--phone-psm() {
+     .topfood-container {
+         .topfood {
+             h2 {
+                 font-size: 3rem;
+             }
+             hr {
+                 width: 30%;
+             }
+         }
+     }
+ }
+ @mixin topfood--phone-p() {
+     .topfood-container {
+         .topfood {
+             h2 {
+                 font-size: 3.5rem;
+             }
+             hr {
+                 width: 30%;
+             }
+         }
+     }
+ }
+ @mixin topfood--phone-l() {
+     .topfood-container {
+         .topfood {
+             h2 {
+                 font-size: 3.5rem;
+             }
+             hr {
+                 width: 20%;
+             }
+         }
+     }
+ }
+ @mixin topfood--tablet-p() {
+     .topfood-container {
+         .topfood {
+             h2 {
+                 font-size: 5rem;
+             }
+             hr {
+                 width: 30%;
+             }
+             .items {
+                 .topfood-items {
+                     width: 270px;
+                 }
+             }
+         }
+     }
+ }
+ @mixin topfood--tablet-l() {
+     .topfood-container {
+         .topfood {
+             h2 {
+                 font-size: 3.5rem;
+             }
+             hr {
+                 width: 15%;
+             }
+             .items {
+                 .topfood-items {
+                     width: 350px;
+                 }
+             }
+         }
+     }
+ }

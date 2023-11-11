@@ -1,0 +1,105 @@
+.about-container {
+    //height: 90vh;
+    background: radial-gradient(circle, rgb(29, 64, 104) 0%, rgba(9,22,32,1) 100%);
+    .about {
+        width: 80%;
+        margin: auto;
+        h2 {
+            padding-top: 10rem;
+        }
+        hr {
+            width: 10%;
+            height: 4px;
+            border: none;
+            background: $gold-c;
+            margin-bottom: 5rem;
+        }            
+        h5 {
+            width: 80%;
+            padding: 2rem 3rem;
+            border: 2px solid $gold-c;
+            box-shadow: -5px 5px $gold-c;
+        }
+    }
+}
+
+@mixin about--phone-psm() {
+    .about-container {
+        .about {
+            h2 {
+                font-size: 3rem;
+            }
+            hr {
+                width: 30%;
+            }
+            h5 {
+                width: 100%;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+@mixin about--phone-p() {
+    .about-container {
+        .about {
+            h2 {
+                font-size: 3.5rem;
+            }
+            hr {
+                width: 30%;
+            }
+            h5 {
+                width: 100%;
+                font-size: 1.7rem;
+            }
+        }
+    }
+}
+@mixin about--phone-l() {
+    .about-container {
+        .about {
+            h2 {
+                font-size: 3.5rem;
+            }
+            hr {
+                width: 15%;
+            }
+            h5 {
+                width: 100%;
+                font-size: 1.7rem;
+            }
+        }
+    }
+}
+@mixin about--tablet-p() {
+    .about-container {
+        .about {
+            h2 {
+                font-size: 5rem;
+            }
+            hr {
+                width: 20%;
+            }
+            h5 {
+                width: 100%;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+@mixin about--tablet-l() {
+    .about-container {
+        .about {
+            h2 {
+                font-size: 3.5rem;
+            }
+            hr {
+                width: 10%;
+            }
+            h5 {
+                width: 90%;
+                font-size: 2rem;
+            }
+        }
+    }
+}

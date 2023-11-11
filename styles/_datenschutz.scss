@@ -1,0 +1,18 @@
+.datenschutz-container {
+    background: radial-gradient(circle, rgb(29, 64, 104) 0%, rgba(9, 22, 32, 1) 100%);
+    .datenschutz {
+        width: 80%;
+        margin: auto;
+        h3 {
+            padding: 3rem 0;
+        }
+        h5 {
+            padding: 1rem 0;
+            text-decoration: underline;
+        }
+        p {
+            padding: 1rem 0;
+        }
+
+    }
+}

@@ -1,0 +1,66 @@
+.bestellung-container {
+    background: $bg-c;
+    .kategorien {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        input[type='checkbox'] {
+            display: none;
+        }
+        input[type='checkbox']:checked + label {
+            background: #112842;
+            box-shadow: inset 5px 5px 9px #0c1d30, inset -5px -5px 9px #163354;
+            &::after {
+                width: 80%;
+            }
+        }
+        label {
+            width: 400px;
+            text-align: center;
+            position: relative;
+            font-size: 2rem;
+            padding: 2rem 3rem;
+            margin: 2rem;
+            border-radius: 10px;
+            background: linear-gradient(145deg, #0f243b, #122b47);
+            box-shadow: 5px 5px 9px #0c1d30, -5px -5px 9px #163354;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 2px;
+                background: $gold-c;
+                bottom: 15px;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        .checkfood-container {
+            width: 100%;
+            //margin: auto;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            .checkfood {
+                margin: 2rem;
+                padding: 2rem;
+                border-radius: 10px;
+                background: linear-gradient(145deg, #0f243b, #122b47);
+                box-shadow: 5px 5px 9px #0c1d30, -5px -5px 9px #163354;
+                h4 {
+                    margin-bottom: 1rem;
+                }
+                h6 {
+                    margin-bottom: 2rem;
+                }
+                h5 {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

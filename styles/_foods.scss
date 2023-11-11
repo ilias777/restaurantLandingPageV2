@@ -1,0 +1,54 @@
+.food-container {
+    background: radial-gradient(circle, rgb(29, 64, 104) 0%, rgba(9, 22, 32, 1) 100%);
+    .food {
+        width: 80%;
+        margin: auto;
+        h2 {
+            padding-top: 5rem;
+        }
+        hr {
+            width: 10%;
+            height: 4px;
+            background: $gold-c;
+            border: none;
+            margin-bottom: 5rem;
+        }
+        .food-items {
+            display: flex;
+            flex-direction: column;
+            .accordion {
+                color: white;
+                padding: 2rem 0;
+                margin: 2rem 0;
+                font-family: 'Montserrat';
+                font-size: 2rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                border: 2px solid $gold-c;
+                background: rgb(29, 64, 104);
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background: rgb(22, 50, 82);
+                }
+            }
+            .panel {
+                transition: all 0.5s ease-in-out;
+                overflow: hidden;
+                max-height: 0;
+                .panel-items {
+                    border-bottom: 2px solid white;
+                    h4 {
+                        padding: 1rem 0;
+                    }
+                    h5 {
+                        text-align: right;
+                    }
+                }
+            }
+            .panel-show {
+                display: block;
+            }
+        }
+    }
+}

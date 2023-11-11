@@ -1,0 +1,70 @@
+@import "nav";
+@import "navMobile";
+@import "welcome";
+@import "about";
+@import "topfood";
+@import "footer";
+@import "mailsend";
+@import "contact";
+
+
+// Table landscape 2
+@media screen and (max-width: 1112px) {
+    @include nav--tablet-lbig();
+    @include welcome--tablet-lbig();
+    @include footer--tablet-lbig();
+}
+
+// Table landscape
+@media screen and (max-width: 1024px) {
+    @include nav--tablet-l();
+    @include welcome--tablet-l();
+    @include about--tablet-l();
+    @include topfood--tablet-l();
+    @include footer--tablet-l();
+}
+
+// Table portraid
+@media screen and (max-width: 834px) {
+    @include nav--tablet-p();
+    @include navMobile--tablet-p();
+    @include welcome--tablet-p();
+    @include about--tablet-p();
+    @include topfood--tablet-p();
+    @include footer--tablet-p();
+}
+
+// Phone landscape
+@media screen and (max-width: 740px) {
+    @include nav--phone-l();
+    @include navMobile--phone-l();
+    @include welcome--phone-l();
+    @include about--phone-l();
+    @include topfood--phone-l();
+    @include footer--phone-l();
+    @include contact--phone-l();
+}
+
+// Phone portraid
+@media screen and (max-width: 559px) {
+    @include nav--phone-p();
+    @include navMobile--phone-p();
+    @include welcome--phone-p();
+    @include about--phone-p();
+    @include topfood--phone-p();
+    @include footer--phone-p();
+    @include mailsend--phone-p();
+    @include contact--phone-p();
+}
+
+// Phone portraid small
+@media only screen and (max-width: 321px) {
+    @include nav--phone-psm();
+    @include navMobile--phone-psm();
+    @include welcome--phone-psm();
+    @include about--phone-psm();
+    @include topfood--phone-psm();
+    @include footer--phone-psm();
+    @include mailsend--phone-psm();
+    @include contact--phone-psm();
+}

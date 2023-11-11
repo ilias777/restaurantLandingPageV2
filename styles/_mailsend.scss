@@ -1,0 +1,77 @@
+.mail-ok-container {
+    background: radial-gradient(circle, rgb(29, 64, 104) 0%, rgba(9, 22, 32, 1) 100%);
+    height: 90vh;
+    text-align: center;
+    .mail-ok {
+        width: 80%;
+        margin: auto;
+        h3 {
+            padding: 15rem 0;
+            span {
+                font-size: 3rem;
+                font-weight: 100;
+            }
+        }
+        a {
+            font-size: 3rem;
+            font-weight: lighter;
+            text-transform: uppercase;
+            border: 2px solid $gold-c;
+            padding: 2rem 4rem;
+            box-shadow: -5px 5px $gold-c;
+            position: relative;
+            z-index: 1;
+            letter-spacing: 2px;
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 0;
+                background: $gold-c;
+                z-index: -1;
+                transition: all 0.2s ease-in-out;;
+            }
+            &:hover {
+                &::before {
+                    height: 100%;
+                }
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+@mixin mailsend--phone-psm() {
+    .mail-ok-container {
+        .mail-ok {
+            h3 {
+                font-size: 2rem;
+                padding: 10rem 0;
+                span {
+                    font-size: 1.7rem;
+                }
+            }
+            a {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+@mixin mailsend--phone-p() {
+    .mail-ok-container {
+        .mail-ok {
+            h3 {
+                font-size: 2rem;
+                padding: 10rem 0;
+                span {
+                    font-size: 1.7rem;
+                }
+            }
+            a {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
