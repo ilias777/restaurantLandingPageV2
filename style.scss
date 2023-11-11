@@ -1,0 +1,62 @@
+$gold-c: #a17d53;
+$gold-c2: #c2996a;
+$creme-c: #ebdecc;
+$bg-c: #112842;
+
+html {
+  font-size: 62.5%;
+}
+::selection {
+  color: white;
+  background: $gold-c;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-size: 5.5rem;
+}
+h2 {
+  font-size: 4.5rem;
+}
+h3 {
+  font-size: 3.5rem;
+}
+h4 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+h5 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+h6 {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+p {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+li {
+  font-size: 2rem;
+  list-style-type: none;
+}
+a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+@import "styles/foods";
+@import "styles/impressum";
+@import "styles/datenschutz";
+@import "styles/animate";
+@import "styles/mediaqueries";
+@import "styles/bestellungen";
