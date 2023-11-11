@@ -1,4 +1,4 @@
-# Restaurant Landing Page
+# Restaurant Landing Page v2
 
 This is the second version of a small responsive landing page for a restaurant
 
@@ -24,12 +24,12 @@ Build with:
 
 Clone the repo
 ```shell
-git clone 
+https://github.com/ilias777/restaurantLandingPageV2.git
 ```
 
 Navigate to the folder
 ```shell
-cd 
+cd restaurantLandingPageV2
 ```
 
 Install npm packages
