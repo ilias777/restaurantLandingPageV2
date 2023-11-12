@@ -24,7 +24,7 @@ Build with:
 
 Clone the repo
 ```shell
-https://github.com/ilias777/restaurantLandingPageV2.git
+git clone https://github.com/ilias777/restaurantLandingPageV2.git
 ```
 
 Navigate to the folder
